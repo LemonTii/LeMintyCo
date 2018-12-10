@@ -1,0 +1,52 @@
+Users will get the choice of using calculator from functions 3U, Physics 3U and a general calculator where they will be able to perform other basic calculations
+If user wishes to calculate Functions 3U calculations 
+    They will choose which unit they are on
+        Functions 
+        Transformations
+        Exponential Functions
+        Discrete Functions
+        Financial Applications
+        Trigonometry
+        Trigonometric functions
+    Upon choosing the unit, they will now choose which equation to use
+        Quadratic formula
+        Discriminant
+        Exponential Growth & Decay
+        Revenue
+        Fundamental Trig ratios
+        Reciprocal Trig Ratios
+        Sine cosine laws
+        Trig Reciprocal Formulas
+        Trig Quotient Formulas
+        Trig Pythagorean Formulas
+        Arithmetic Series and Sequence Formulas
+        Compound Interest Formulas
+        Annuity formulas
+    Based on the equation, user will input the necessary details
+    App will display the answer
+If user wishes to calculate Physics 3U calculations
+    They will choose which unit they are on
+        One Dimensional Kinematics
+        Two Dimensional Kinematics
+        Forces
+        Energy and Society
+        Waves and Sounds
+    Upon choosing the unit, they will now choose which equation to use
+        Kinematic Equations
+        Dynamics Equations
+        Work, Energy, and Power Equations
+        Conservation of Energy Equations
+        Thermal Energy Equations
+        Waves and Sound Equations
+        Conversions?
+        Error Formulae
+        Quadratic formula
+        Sine cosine laws
+    Based on the equation, user will input the necessary details
+    App will display the answer
+If user just wants to use the general calculator, it will include a basic calculator layout with basic functions:
+    Addition
+    Subtraction
+    Multiplication
+    Division
+    Positive/Negative Intervals
