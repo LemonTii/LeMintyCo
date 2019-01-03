@@ -1,0 +1,110 @@
+class Calculator{
+  print ("Which calculator would you like? (1. Functions 3U 2. Physics 3U 3. General Calculator)")
+  option = sc.next()
+ 
+ while (true){
+  switch (option)
+    case 1: Function fnc = new Function()
+            fnc.ask()
+            break
+    case 2: Physics phy = new Physics()
+            phy.ask()
+            break
+    case 3: GenCalc gcalc = new GenCalc()
+            gcalc.ask()
+            break
+    default: print ("Invalid input")}}}
+    
+class Function{
+  public void ask(){
+    print ("Which unit would you like? (1. Quadratic formula 2. Discriminant 3. Exponential Growth & Decay
+           4. Revenue 5. Fundamental Trig ratios 6. Reciprocal Trig Ratios 7. Sine cosine laws 8. Trig Quotient Formulas 
+           9. Trig Pythagorean Formulas 10. Arithmetic Series and Sequence Formulas 11. Compound Interest Formulas 
+           12. Annuity formulas)")
+    Funits = sc.next()
+    
+    while (true) {
+      switch (Funits)
+        case 1: Function fnc = new Function()
+                fnc.qformula()
+                break
+        case 2: Function fnc = new Function()
+                fnc.discriminant()
+                break
+        case 3: Function fnc = new Function()
+                fnc.exponential()
+                break
+        case 4: Function fnc = new Function()
+                fnc.revenue()
+                break
+        case 5: Function fnc = new Function()
+                fnc.trigratio()
+                break
+        case 6: Function fnc = new Function()
+                fnc.reciptrig()
+                break
+        case 7: Function fnc = new Function()
+                fnc.sincoslaw()
+                break
+        case 8: Function fnc = new Function()
+                fnc.tqf()
+                break
+        case 9: Function fnc = new Function()
+                fnc.tpf()
+                break
+        case 10: Function fnc = new Function()
+                fnc.assf()
+                break
+        case 11: Function fnc = new Function()
+                fnc.cif()
+                break
+        case 12: Function fnc = new Function()
+                fnc.annuity()
+                break
+        default: print ("Invalid input")}
+  }
+}
+
+class Physics{
+public void ask(){
+    print ("Which unit would you like? (1. Kinematic Equations 2. Dynamics Equations 3. Work, Energy, and Power Equations 
+           4. Conservation of Energy Equations 5. Thermal Energy Equations 6. Waves and Sound Equations 7. Conversions?
+           8. Error Formulae 9. Quadratic formula)")
+    Funits = sc.next()
+    
+    while (true) {
+      switch (Funits)
+        case 1: Physics phy = new Physics()
+                phy.kinematic()
+                break
+        case 2: Physics phy = new Physics()
+                phy.dynamics()
+                break
+        case 3: Physics phy = new Physics()
+                phy.wep()
+                break
+        case 4: Physics phy = new Physics()
+                phy.consenergy()
+                break
+        case 5: Physics phy = new Physics()
+                phy.tenergy()
+                break
+        case 6: Physics phy = new Physics()
+                phy.wavesound()
+                break
+        case 7: Physics phy = new Physics()
+                phy.conversions()
+                break
+        case 8: Physics phy = new Physics()
+                phy.err()
+                break
+        case 9: Function fnc = new Function()
+                fnc.qformula()
+                break
+        default: print ("Invalid input")}
+}
+}
+
+class GenCalc{
+
+}
