@@ -4,7 +4,7 @@ package Calculation;
 
 public class Calculator extends javax.swing.JFrame {
     
-    
+    //Attributes
     double firstNum;
     double secondNum;
     double result;
@@ -307,6 +307,7 @@ public class Calculator extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //Number Buttons: will display the number
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         String EnterNum = DISPLAY.getText() + jButton4.getText();
         DISPLAY.setText(EnterNum);
@@ -358,10 +359,12 @@ public class Calculator extends javax.swing.JFrame {
         DISPLAY.setText(EnterNum);
     }//GEN-LAST:event_jButton10ActionPerformed
 
+    //C button: will erase
     private void ERASEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ERASEActionPerformed
         DISPLAY.setText("");
     }//GEN-LAST:event_ERASEActionPerformed
 
+    //Operation buttons
     private void PLUSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PLUSActionPerformed
         // TODO add your handling code here:
         firstNum = Double.parseDouble(DISPLAY.getText());
@@ -388,17 +391,20 @@ public class Calculator extends javax.swing.JFrame {
         operations = "*";
     }//GEN-LAST:event_MULTIPLYActionPerformed
 
+    //Decimal button: Will produce a decimal
     private void DECActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DECActionPerformed
         String EnterNum = DISPLAY.getText() + DEC.getText();
         DISPLAY.setText(EnterNum);
     }//GEN-LAST:event_DECActionPerformed
 
+    //Negative/Positive button: Will change the number to a negative
     private void NEGAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NEGAActionPerformed
         double ops = Double.parseDouble(String.valueOf(DISPLAY.getText()));
         ops = ops * (-1);
         DISPLAY.setText(String.valueOf(ops));
     }//GEN-LAST:event_NEGAActionPerformed
 
+    //Equal button: Will display results
     private void EQUALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EQUALActionPerformed
         String answer;
         secondNum = Double.parseDouble(DISPLAY.getText());
@@ -425,6 +431,7 @@ public class Calculator extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_EQUALActionPerformed
 
+    //main method: will run the calculator
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
