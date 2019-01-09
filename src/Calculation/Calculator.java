@@ -458,7 +458,7 @@ public class Calculator extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new Calculator().setVisible(true);
+            new Intro().setVisible(true);
         });
     }
 
