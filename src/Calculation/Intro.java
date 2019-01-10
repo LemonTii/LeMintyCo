@@ -37,7 +37,7 @@ public class Intro extends javax.swing.JFrame {
         });
 
         logo.setBackground(new java.awt.Color(255, 255, 204));
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Calculation/images/LEMONFINAL.png"))); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Calculation/images/Logo.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
