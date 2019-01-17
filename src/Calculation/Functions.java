@@ -45,8 +45,6 @@ public class Functions extends javax.swing.JFrame {
         compound = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 36)); // NOI18N
