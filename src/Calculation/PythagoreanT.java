@@ -150,7 +150,7 @@ public class PythagoreanT extends javax.swing.JFrame {
     }//GEN-LAST:event_aValActionPerformed
 
     private void ENTERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ENTERActionPerformed
-        //if c is unknown, then a + b will yeild c
+        //if c is unknown, then a + b will yield c
         if ("".equals(cVal.getText())) {
             a=Double.parseDouble(aVal.getText());
             b=Double.parseDouble(bVal.getText());

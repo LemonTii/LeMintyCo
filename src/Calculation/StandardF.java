@@ -216,7 +216,7 @@ public class StandardF extends javax.swing.JFrame {
         }
         //Error message for invalid variable type
         catch (Exception e){
-            JOptionPane.showMessageDialog(null, "Invalid variable");
+            JOptionPane.showMessageDialog(null, "Invalid/missing variable");
         }
     }//GEN-LAST:event_EnterActionPerformed
 

@@ -280,11 +280,11 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_standardActionPerformed
 
     private void factoredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_factoredActionPerformed
-
+        new FactoredF().setVisible(true);
     }//GEN-LAST:event_factoredActionPerformed
 
     private void vertexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vertexActionPerformed
-        // TODO add your handling code here:
+        new VertexF().setVisible(true);
     }//GEN-LAST:event_vertexActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -296,7 +296,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_DiscrimActionPerformed
 
     private void ratiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ratiosActionPerformed
-        // TODO add your handling code here:
+        new TrigRatios().setVisible(true);
     }//GEN-LAST:event_ratiosActionPerformed
 
     private void sineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sineActionPerformed
