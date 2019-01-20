@@ -65,7 +65,7 @@ public class Qelectricty extends javax.swing.JFrame {
         NVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
         ANSWER.setEditable(false);
-        ANSWER.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ANSWER.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -112,12 +112,12 @@ public class Qelectricty extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel6)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3))
                 .addGap(73, 73, 73)
                 .addComponent(ENTER)
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(87, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -147,7 +147,7 @@ public class Qelectricty extends javax.swing.JFrame {
             Q= (N*e);
             
             //displays the answers to two decimal points
-            ANSWER.setText(String.format("Q= %.2f", Q));
+            ANSWER.setText("Q="+ Q);
 
         }
         catch (Exception e) {
