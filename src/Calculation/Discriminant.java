@@ -9,7 +9,7 @@ public class Discriminant extends javax.swing.JFrame {
     double a;
     double b;
     double c;
-    double y; 
+    double d; 
     
     
     public Discriminant() {
@@ -54,7 +54,7 @@ public class Discriminant extends javax.swing.JFrame {
         jLabel6.setText("Formula:");
 
         jLabel7.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
-        jLabel7.setText("y = b² - 4ac");
+        jLabel7.setText("D = b² - 4ac");
 
         aVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
@@ -150,10 +150,10 @@ public class Discriminant extends javax.swing.JFrame {
             c=Double.parseDouble(cVal.getText());
             
             // does the calculations
-            y = ((Math.pow(b,2) - (4*a*c)));
+            d = ((Math.pow(b,2) - (4*a*c)));
             
             //displays the answers to two decimal points
-            ANSWER.setText(String.format("y= %.2f", y));
+            ANSWER.setText(String.format("D= %.2f", d));
         }
         catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Invalid variable");
