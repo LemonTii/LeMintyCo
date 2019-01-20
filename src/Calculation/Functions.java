@@ -304,7 +304,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_sineActionPerformed
 
     private void cosineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosineActionPerformed
-        // TODO add your handling code here:
+        new Cosine().setVisible(true);
     }//GEN-LAST:event_cosineActionPerformed
 
     private void annuityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_annuityActionPerformed
