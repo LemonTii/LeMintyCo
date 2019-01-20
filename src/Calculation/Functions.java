@@ -37,7 +37,7 @@ public class Functions extends javax.swing.JFrame {
         factored = new javax.swing.JButton();
         vertex = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        Discrim = new javax.swing.JButton();
         ratios = new javax.swing.JButton();
         sine = new javax.swing.JButton();
         cosine = new javax.swing.JButton();
@@ -114,11 +114,11 @@ public class Functions extends javax.swing.JFrame {
             }
         });
 
-        jButton9.setFont(new java.awt.Font("Courier New", 0, 18)); // NOI18N
-        jButton9.setText("Discriminant");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        Discrim.setFont(new java.awt.Font("Courier New", 0, 18)); // NOI18N
+        Discrim.setText("Discriminant");
+        Discrim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                DiscrimActionPerformed(evt);
             }
         });
 
@@ -201,7 +201,7 @@ public class Functions extends javax.swing.JFrame {
                                     .addComponent(cosine, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(annuity, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Discrim, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(compound, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -236,7 +236,7 @@ public class Functions extends javax.swing.JFrame {
                     .addComponent(annuity, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Discrim, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(compound, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(Back)
@@ -253,14 +253,14 @@ public class Functions extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 406, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void quadraticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quadraticActionPerformed
-        // TODO add your handling code here:
+        new QuadraticF().setVisible(true);
     }//GEN-LAST:event_quadraticActionPerformed
 
     private void equivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_equivActionPerformed
@@ -272,7 +272,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_exponActionPerformed
 
     private void pythagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pythagActionPerformed
-        // TODO add your handling code here:
+        new PythagoreanT().setVisible(true);
     }//GEN-LAST:event_pythagActionPerformed
 
     private void standardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_standardActionPerformed
@@ -280,7 +280,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_standardActionPerformed
 
     private void factoredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_factoredActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_factoredActionPerformed
 
     private void vertexActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vertexActionPerformed
@@ -291,9 +291,9 @@ public class Functions extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    private void DiscrimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DiscrimActionPerformed
+        new Discriminant().setVisible(true);
+    }//GEN-LAST:event_DiscrimActionPerformed
 
     private void ratiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ratiosActionPerformed
         // TODO add your handling code here:
@@ -356,6 +356,7 @@ public class Functions extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Back;
+    private javax.swing.JButton Discrim;
     private javax.swing.JButton annuity;
     private javax.swing.JButton compound;
     private javax.swing.JButton cosine;
@@ -363,7 +364,6 @@ public class Functions extends javax.swing.JFrame {
     private javax.swing.JButton expon;
     private javax.swing.JButton factored;
     private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton pythag;
