@@ -180,7 +180,8 @@ public class ETotal extends javax.swing.JFrame {
             Answer.setText("Error");
         }
         catch (Exception e) {
-            
+            JOptionPane.showMessageDialog(null, "Invalid/missing variable");
+
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
