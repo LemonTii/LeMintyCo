@@ -404,11 +404,11 @@ public class Physics extends javax.swing.JFrame {
     }//GEN-LAST:event_f7ActionPerformed
 
     private void f8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f8ActionPerformed
-        // TODO add your handling code here:
+        new EPower().setVisible(true);
     }//GEN-LAST:event_f8ActionPerformed
 
     private void f9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f9ActionPerformed
-        // TODO add your handling code here:
+        new ELatent().setVisible(true);
     }//GEN-LAST:event_f9ActionPerformed
 
     private void f10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f10ActionPerformed

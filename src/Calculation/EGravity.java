@@ -173,7 +173,7 @@ public class EGravity extends javax.swing.JFrame {
             }
         }
         catch (ArithmeticException a){
-            Answer.setText("Error");
+            Answer.setText("Mathematical error");
         }
         catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Invalid/missing variable");

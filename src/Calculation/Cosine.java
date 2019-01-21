@@ -51,7 +51,7 @@ public class Cosine extends javax.swing.JFrame {
         field2.setText("b Value");
 
         field4.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        field4.setText("A, B, or C Value");
+        field4.setText("A Value");
 
         bVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         bVal.addActionListener(new java.awt.event.ActionListener() {
@@ -197,7 +197,7 @@ public class Cosine extends javax.swing.JFrame {
     }
     
     private double cosineangle(double x, double y, double z) {
-        double val= Math.pow(y, 2)+ Math.pow(z, 2)- Math.pow(x,2) / (2*y*z);
+        double val= (Math.pow(y, 2)+ Math.pow(z, 2)- Math.pow(x,2)) / (2*y*z);
         double fin= Math.acos(val);
         return fin;
     }
@@ -235,6 +235,9 @@ public class Cosine extends javax.swing.JFrame {
                 
                 Answer.setText("Angle= "+cosineangle(a,b,c));
             }
+        }
+        catch (ArithmeticException a) {
+            Answer.setText("Mathematical error");
         }
         catch (Exception e){
             JOptionPane.showMessageDialog(null, "Invalid/missing variable");
