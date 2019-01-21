@@ -217,7 +217,6 @@ public class TrigRatios extends javax.swing.JFrame {
         }
         catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Invalid/missing variable");
-
         }
     }//GEN-LAST:event_TanActionPerformed
 
