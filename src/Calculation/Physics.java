@@ -92,6 +92,11 @@ public class Physics extends javax.swing.JFrame {
 
         k2.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k2.setText("a = Δ⊽/Δt ");
+        k2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                k2ActionPerformed(evt);
+            }
+        });
 
         k3.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k3.setText("v2 = v1 + āΔt");
@@ -413,6 +418,10 @@ public class Physics extends javax.swing.JFrame {
     private void k1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k1ActionPerformed
         new Velocity().setVisible(true);
     }//GEN-LAST:event_k1ActionPerformed
+
+    private void k2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k2ActionPerformed
+        new Acceleration().setVisible(true);
+    }//GEN-LAST:event_k2ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

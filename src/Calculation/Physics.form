@@ -251,6 +251,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="a = &#x394;&#x22bd;/&#x394;t "/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="k2ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="k3">
           <Properties>
