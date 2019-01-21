@@ -33,7 +33,6 @@ public class PythagoreanT extends javax.swing.JFrame {
         ENTER = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1003, 522));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(1003, 522));
@@ -69,6 +68,11 @@ public class PythagoreanT extends javax.swing.JFrame {
 
         ANSWER.setEditable(false);
         ANSWER.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ANSWER.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ANSWERActionPerformed(evt);
+            }
+        });
 
         ENTER.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         ENTER.setText("Enter");
@@ -86,13 +90,12 @@ public class PythagoreanT extends javax.swing.JFrame {
                 .addGap(119, 119, 119)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(ENTER, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(label1)
-                        .addComponent(label3)
-                        .addComponent(cVal, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
-                        .addComponent(label2)
-                        .addComponent(bVal, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
-                        .addComponent(aVal)))
+                    .addComponent(label1)
+                    .addComponent(label3)
+                    .addComponent(cVal, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
+                    .addComponent(label2)
+                    .addComponent(bVal, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)
+                    .addComponent(aVal))
                 .addGap(270, 270, 270)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -150,6 +153,7 @@ public class PythagoreanT extends javax.swing.JFrame {
     }//GEN-LAST:event_aValActionPerformed
 
     private void ENTERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ENTERActionPerformed
+      try { 
         //if c is unknown, then a + b will yield c
         if ("".equals(cVal.getText())) {
             a=Double.parseDouble(aVal.getText());
@@ -177,7 +181,14 @@ public class PythagoreanT extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Invalid variable");
         }
+      } catch (Exception e) {
+          JOptionPane.showMessageDialog(null, "Invalid variable");
+      }
     }//GEN-LAST:event_ENTERActionPerformed
+
+    private void ANSWERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ANSWERActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ANSWERActionPerformed
 
    
     public static void main(String args[]) {
