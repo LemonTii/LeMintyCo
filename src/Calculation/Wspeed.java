@@ -66,10 +66,10 @@ public class Wspeed extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel3.setText("Answer");
 
-        jLabel4.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jLabel4.setText("Formula");
+        jLabel4.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
+        jLabel4.setText("Formula:");
 
-        jLabel5.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel5.setText("v = 331.4m/s + 0.606ms/°C x T");
 
         jTextField2.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N

@@ -48,7 +48,7 @@ public class Wlambspeed extends javax.swing.JFrame {
         jLabel1.setText("v Value");
 
         jButton1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jButton1.setText("jButton1");
+        jButton1.setText("Enter");
 
         jTextField1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {

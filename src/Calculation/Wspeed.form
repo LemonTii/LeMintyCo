@@ -142,15 +142,15 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Courier New" size="24" style="0"/>
+              <Font name="Courier New" size="24" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Formula"/>
+            <Property name="text" type="java.lang.String" value="Formula:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Courier New" size="24" style="0"/>
+              <Font name="Courier New" size="24" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="v = 331.4m/s + 0.606ms/&#xb0;C x T"/>
           </Properties>
