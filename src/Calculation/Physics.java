@@ -84,6 +84,11 @@ public class Physics extends javax.swing.JFrame {
 
         k1.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k1.setText("v = Δd/Δt");
+        k1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                k1ActionPerformed(evt);
+            }
+        });
 
         k2.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k2.setText("a = Δ⊽/Δt ");
@@ -344,7 +349,7 @@ public class Physics extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
     private void k3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_k3ActionPerformed
@@ -404,6 +409,10 @@ public class Physics extends javax.swing.JFrame {
     private void f10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f10ActionPerformed
         new EHeat().setVisible(true);
     }//GEN-LAST:event_f10ActionPerformed
+
+    private void k1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k1ActionPerformed
+        new Velocity().setVisible(true);
+    }//GEN-LAST:event_k1ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
