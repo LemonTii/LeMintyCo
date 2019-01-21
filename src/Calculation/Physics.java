@@ -48,6 +48,13 @@ public class Physics extends javax.swing.JFrame {
         e2 = new javax.swing.JButton();
         e3 = new javax.swing.JButton();
         e4 = new javax.swing.JButton();
+        f4 = new javax.swing.JButton();
+        f5 = new javax.swing.JButton();
+        f6 = new javax.swing.JButton();
+        f7 = new javax.swing.JButton();
+        f8 = new javax.swing.JButton();
+        f9 = new javax.swing.JButton();
+        f10 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -157,6 +164,62 @@ public class Physics extends javax.swing.JFrame {
             }
         });
 
+        f4.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f4.setText("W= FΔd");
+        f4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f4ActionPerformed(evt);
+            }
+        });
+
+        f5.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f5.setText("Ek= 1/2mv^2");
+        f5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f5ActionPerformed(evt);
+            }
+        });
+
+        f6.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f6.setText("Eg= mgh");
+        f6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f6ActionPerformed(evt);
+            }
+        });
+
+        f7.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f7.setText("Et= Ek+Eg");
+        f7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f7ActionPerformed(evt);
+            }
+        });
+
+        f8.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f8.setText("P= E/Δt= W/Δt");
+        f8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f8ActionPerformed(evt);
+            }
+        });
+
+        f9.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f9.setText("Q=ml");
+        f9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f9ActionPerformed(evt);
+            }
+        });
+
+        f10.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
+        f10.setText("Q=mcΔT");
+        f10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                f10ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -181,21 +244,34 @@ public class Physics extends javax.swing.JFrame {
                         .addGap(40, 40, 40)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(f1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(f2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(f3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(e1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(e4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(e2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(e3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel6)
-                        .addGap(133, 133, 133))))
+                                .addComponent(e3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(f1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(259, 259, 259)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(f5, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(f4, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(f6, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(f7, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(f10, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(f8, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(f9, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(100, 100, 100)
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel6)
+                                .addGap(117, 117, 117))))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,38 +282,46 @@ public class Physics extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(k1)
-                    .addComponent(f1))
+                    .addComponent(f1)
+                    .addComponent(f4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(f2)
-                    .addComponent(k2))
+                    .addComponent(k2)
+                    .addComponent(f5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(f3)
-                    .addComponent(k3))
+                    .addComponent(k3)
+                    .addComponent(f6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(k4))
+                    .addComponent(k4)
+                    .addComponent(f7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(k5)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(e1)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(e1)
+                            .addComponent(f10))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(e2)
                             .addComponent(e3)
-                            .addComponent(k6))))
+                            .addComponent(k6)
+                            .addComponent(f8))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(e4)
-                    .addComponent(k7))
+                    .addComponent(k7)
+                    .addComponent(f9))
                 .addContainerGap(74, Short.MAX_VALUE))
         );
 
@@ -291,6 +375,34 @@ public class Physics extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_e4ActionPerformed
 
+    private void f4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f4ActionPerformed
+        new EWork().setVisible(true);
+    }//GEN-LAST:event_f4ActionPerformed
+
+    private void f5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f5ActionPerformed
+        new EKinetic().setVisible(true);
+    }//GEN-LAST:event_f5ActionPerformed
+
+    private void f6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f6ActionPerformed
+        new EGravity().setVisible(true);
+    }//GEN-LAST:event_f6ActionPerformed
+
+    private void f7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f7ActionPerformed
+        new ETotal().setVisible(true);
+    }//GEN-LAST:event_f7ActionPerformed
+
+    private void f8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f8ActionPerformed
+
+    private void f9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f9ActionPerformed
+
+    private void f10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_f10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -332,8 +444,15 @@ public class Physics extends javax.swing.JFrame {
     private javax.swing.JButton e3;
     private javax.swing.JButton e4;
     private javax.swing.JButton f1;
+    private javax.swing.JButton f10;
     private javax.swing.JButton f2;
     private javax.swing.JButton f3;
+    private javax.swing.JButton f4;
+    private javax.swing.JButton f5;
+    private javax.swing.JButton f6;
+    private javax.swing.JButton f7;
+    private javax.swing.JButton f8;
+    private javax.swing.JButton f9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
