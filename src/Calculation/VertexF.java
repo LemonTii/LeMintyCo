@@ -175,6 +175,7 @@ public class VertexF extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
+        //solves for the missing y value
         try {
             a= Double.parseDouble(aVal.getText());
             x= Double.parseDouble(xVal.getText());

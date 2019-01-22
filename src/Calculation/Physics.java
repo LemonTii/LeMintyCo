@@ -429,7 +429,7 @@ public class Physics extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
+    //spawns a physics screen depending on the equation chosen
     private void k3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k3ActionPerformed
         new KNoDisplacement().setVisible(true);
     }//GEN-LAST:event_k3ActionPerformed

@@ -157,18 +157,21 @@ public class ETotal extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
+            //solves for the total energy (Et)
             if ("".equals(etVal.getText())){
                 eg=Double.parseDouble(egVal.getText());
                 ek=Double.parseDouble(ekVal.getText());
                 
                 Answer.setText("Et= "+Add(eg,ek));
             }
+            //solves for kinetic energy(Ek)
             else if ("".equals(ekVal.getText())){
                 et=Double.parseDouble(etVal.getText());
                 eg=Double.parseDouble(egVal.getText());
                 
                 Answer.setText("Ek= "+Subtract(et,eg));
             }
+            //solves for gravitational energy
             else if ("".equals(egVal.getText())){
                 et=Double.parseDouble(etVal.getText());
                 ek=Double.parseDouble(ekVal.getText());

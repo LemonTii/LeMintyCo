@@ -203,6 +203,7 @@ public class StandardF extends javax.swing.JFrame {
     }//GEN-LAST:event_xValActionPerformed
 //Button will calculate the results and display answer
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
+        //solves for missing y value
         try{
             //Sets each text field to values inputted by the user
             a=Double.parseDouble(aVal.getText());

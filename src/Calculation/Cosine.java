@@ -204,6 +204,7 @@ public class Cosine extends javax.swing.JFrame {
     
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         try {
+            //solves for missing side length a
             if ("".equals(aVal.getText())) {
                 b= Double.parseDouble(bVal.getText());
                 c= Double.parseDouble(cVal.getText());
@@ -211,7 +212,7 @@ public class Cosine extends javax.swing.JFrame {
                 
                 Answer.setText("a= "+cosinelaw(b,c,A));
             }   
-                
+            //solves for missing side length b    
             else if ("".equals(bVal.getText())) {
                 a= Double.parseDouble(aVal.getText());
                 c= Double.parseDouble(cVal.getText());
@@ -219,7 +220,7 @@ public class Cosine extends javax.swing.JFrame {
                 
                 Answer.setText("b= "+cosinelaw(a,c,A));
             }
-            
+            //solves for the missing side length c
             else if ("".equals(cVal.getText())) {
                 a= Double.parseDouble(aVal.getText());
                 b= Double.parseDouble(bVal.getText());
@@ -227,7 +228,7 @@ public class Cosine extends javax.swing.JFrame {
                 
                 Answer.setText("c= "+cosinelaw(a,b,A));
             }
-            
+            //solves for the missing angle
             else if ("".equals(AAval.getText())) {
                 a= Double.parseDouble(aVal.getText());
                 b= Double.parseDouble(bVal.getText());

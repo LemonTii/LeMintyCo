@@ -145,6 +145,7 @@ public class EPower extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
+        //solves for variable p (power)
         try {
             if ("".equals(eVal.getText())) {
                 w= Double.parseDouble(wVal.getText());
@@ -152,6 +153,7 @@ public class EPower extends javax.swing.JFrame {
                 
                 Answer.setText("P= "+Divide(w));
             }
+            //solves for variable w (work)
             else if ("".equals(wVal.getText())) {
                 e= Double.parseDouble(eVal.getText());
                 t= Double.parseDouble(tVal.getText());
@@ -166,7 +168,7 @@ public class EPower extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Invalid/missing variable");
         }
     }//GEN-LAST:event_EnterActionPerformed
-
+    //division method that can be reusued
     private double Divide(double x) {
         double val= x/t;
         return val;

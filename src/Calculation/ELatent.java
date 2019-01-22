@@ -4,7 +4,6 @@ import javax.swing.JOptionPane;
 
 public class ELatent extends javax.swing.JFrame {
 
-    
     double m,l,ans;
     
     public ELatent() {
@@ -118,6 +117,7 @@ public class ELatent extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
+        //this equation doesn't rearrange and only solves for heat
         try {
             m= Double.parseDouble(mVal.getText());
             l= Double.parseDouble(lVal.getText());

@@ -153,18 +153,21 @@ public class EGravity extends javax.swing.JFrame {
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         try {
+            //solves for Gravitational energy (Eg)
             if ("".equals(egVal.getText())) {
                 m= Double.parseDouble(mVal.getText());
                 h= Double.parseDouble(hVal.getText());
                 
                 Answer.setText("Eg= "+Multiply(m,h));
             }
+            //solves for mass (m)
             else if ("".equals(mVal.getText())) {
                 E= Double.parseDouble(egVal.getText());
                 h= Double.parseDouble(hVal.getText());
                 
                 Answer.setText("m= "+Divide(E,h));
             }
+            //solves for height (h)
             else if ("".equals(hVal.getText())) {
                 E= Double.parseDouble(egVal.getText());
                 m= Double.parseDouble(mVal.getText());

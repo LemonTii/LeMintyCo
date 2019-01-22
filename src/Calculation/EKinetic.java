@@ -173,6 +173,7 @@ public class EKinetic extends javax.swing.JFrame {
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         try {
+            //solves for the kinetic energy(Ek)
             if ("".equals(EKVal.getText())) {
                 m= Double.parseDouble(mVal.getText());
                 v= Double.parseDouble(vVal.getText());
@@ -180,6 +181,7 @@ public class EKinetic extends javax.swing.JFrame {
                 
                 Answer.setText("Ek= "+ans);
             }
+            //solves for mass(m)
             else if ("".equals(mVal.getText())) {
                 E= Double.parseDouble(EKVal.getText());
                 v= Double.parseDouble(vVal.getText());
@@ -187,6 +189,7 @@ public class EKinetic extends javax.swing.JFrame {
                 
                 Answer.setText("m= "+ans);
             }
+            //solves for the velocity
             else if ("".equals(vVal.getText())) {
                 E= Double.parseDouble(EKVal.getText());
                 m= Double.parseDouble(mVal.getText());   

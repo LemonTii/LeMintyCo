@@ -171,18 +171,21 @@ public class EWork extends javax.swing.JFrame {
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         try {
+            //rearranges to solve for w (work)
             if ("".equals(WVal.getText())) {
                 F= Double.parseDouble(FVal.getText());
                 d= Double.parseDouble(dVal.getText());
                 
                 Answer.setText("W= "+Multiply(F,d));
             }
+            //rearranges equation to solve for f (force)
             else if ("".equals(FVal.getText())) {
                 W= Double.parseDouble(WVal.getText());
                 d= Double.parseDouble(dVal.getText());
                 
                 Answer.setText("F= "+Divide(W,d));
             }
+            //rearranges equation to solve for d (displacement)
             else if ("".equals(dVal.getText())) {
                 W= Double.parseDouble(WVal.getText());
                 F= Double.parseDouble(FVal.getText());
@@ -197,7 +200,7 @@ public class EWork extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Invalid/missing variable");
         }
     }//GEN-LAST:event_EnterActionPerformed
-    
+
     private double Divide (double x,double y) {
         double val= x/y;
         return val;

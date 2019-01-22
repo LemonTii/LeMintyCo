@@ -66,7 +66,7 @@ public class EHeat extends javax.swing.JFrame {
         jLabel2.setText("Formula:");
 
         jLabel3.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
-        jLabel3.setText("Q=mcT");
+        jLabel3.setText("Q=mcΔT");
 
         jLabel4.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         jLabel4.setText("Heat(Q)");
@@ -78,7 +78,7 @@ public class EHeat extends javax.swing.JFrame {
         jLabel6.setText("Heat capacity");
 
         jLabel7.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jLabel7.setText("Temperature(T)");
+        jLabel7.setText("Temperature(ΔT)");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -174,6 +174,7 @@ public class EHeat extends javax.swing.JFrame {
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         try {
+            //solves for Heat (q)
             if ("".equals(qVal.getText())) {
                 m= Double.parseDouble(mVal.getText());
                 c= Double.parseDouble(cVal.getText());
@@ -181,6 +182,7 @@ public class EHeat extends javax.swing.JFrame {
             
                 Answer.setText("Q= "+calculation1(m,c,t));
             }
+            //solves for mass(m)
             else if ("".equals(mVal.getText())) {
                 q= Double.parseDouble(qVal.getText());
                 c= Double.parseDouble(cVal.getText());
@@ -188,6 +190,7 @@ public class EHeat extends javax.swing.JFrame {
             
                 Answer.setText("m= "+calculation2(q,c,t));
             }
+            //solves for heat capacity
             else if ("".equals(cVal.getText())) {
                 q= Double.parseDouble(qVal.getText());
                 m= Double.parseDouble(mVal.getText());
@@ -195,6 +198,7 @@ public class EHeat extends javax.swing.JFrame {
             
                 Answer.setText("c= "+calculation2(q,m,t));
     }//GEN-LAST:event_EnterActionPerformed
+            //solves for change in temperature(t)
             else if ("".equals(tVal.getText())) {
                 q= Double.parseDouble(qVal.getText());
                 c= Double.parseDouble(cVal.getText());

@@ -1,14 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Calculation;
 
-/**
- *
- * @author Melanie Kirkby
- */
 public class Functions extends javax.swing.JFrame {
 
     /**
@@ -258,7 +250,7 @@ public class Functions extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+//depending on which button is pressed, a different scene will appear
     private void quadraticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quadraticActionPerformed
         new QuadraticF().setVisible(true);
     }//GEN-LAST:event_quadraticActionPerformed
