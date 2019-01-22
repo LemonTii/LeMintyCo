@@ -114,9 +114,19 @@ public class Physics extends javax.swing.JFrame {
 
         k4.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k4.setText("Δd= v1Δt+½āΔt²");
+        k4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                k4ActionPerformed(evt);
+            }
+        });
 
         k5.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k5.setText("Δd= v2Δt-½āΔt² ");
+        k5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                k5ActionPerformed(evt);
+            }
+        });
 
         k6.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k6.setText("Δd= ½(v1+v2)Δt ");
@@ -421,7 +431,7 @@ public class Physics extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void k3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k3ActionPerformed
-        // TODO add your handling code here:
+        new KNoDisplacement().setVisible(true);
     }//GEN-LAST:event_k3ActionPerformed
 
     private void f3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f3ActionPerformed
@@ -481,11 +491,11 @@ public class Physics extends javax.swing.JFrame {
     }//GEN-LAST:event_f10ActionPerformed
 
     private void k1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k1ActionPerformed
-        new Velocity().setVisible(true);
+        new KVelocity().setVisible(true);
     }//GEN-LAST:event_k1ActionPerformed
 
     private void k2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k2ActionPerformed
-        new Acceleration().setVisible(true);
+        new KAcceleration().setVisible(true);
     }//GEN-LAST:event_k2ActionPerformed
 
     private void w1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1ActionPerformed
@@ -511,6 +521,14 @@ public class Physics extends javax.swing.JFrame {
     private void w6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w6ActionPerformed
         new Wdopler().setVisible(true);
     }//GEN-LAST:event_w6ActionPerformed
+
+    private void k4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k4ActionPerformed
+        new KNoVelocity2().setVisible(true);
+    }//GEN-LAST:event_k4ActionPerformed
+
+    private void k5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k5ActionPerformed
+        new KNoVelocity1().setVisible(true);
+    }//GEN-LAST:event_k5ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
