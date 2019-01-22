@@ -38,6 +38,7 @@ public class Intro extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jButton2.setText("Functions");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -46,6 +47,7 @@ public class Intro extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jButton3.setText("Physics");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -53,8 +55,6 @@ public class Intro extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Melanie Kirkby\\Downloads\\Logo.jpg")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
