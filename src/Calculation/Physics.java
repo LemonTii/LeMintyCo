@@ -47,7 +47,6 @@ public class Physics extends javax.swing.JFrame {
         e1 = new javax.swing.JButton();
         e2 = new javax.swing.JButton();
         e3 = new javax.swing.JButton();
-        e4 = new javax.swing.JButton();
         f4 = new javax.swing.JButton();
         f5 = new javax.swing.JButton();
         f6 = new javax.swing.JButton();
@@ -61,8 +60,7 @@ public class Physics extends javax.swing.JFrame {
         w5 = new javax.swing.JButton();
         w4 = new javax.swing.JButton();
         w6 = new javax.swing.JButton();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        Back = new javax.swing.JButton();
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(936, 406));
@@ -97,7 +95,7 @@ public class Physics extends javax.swing.JFrame {
         });
 
         k2.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        k2.setText("a = Δ⊽/Δt ");
+        k2.setText("a = Δv/Δt ");
         k2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 k2ActionPerformed(evt);
@@ -189,14 +187,6 @@ public class Physics extends javax.swing.JFrame {
         e3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 e3ActionPerformed(evt);
-            }
-        });
-
-        e4.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
-        e4.setText("V= ΔE/Q= W/Q ");
-        e4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                e4ActionPerformed(evt);
             }
         });
 
@@ -304,6 +294,14 @@ public class Physics extends javax.swing.JFrame {
             }
         });
 
+        Back.setFont(new java.awt.Font("Courier New", 0, 11)); // NOI18N
+        Back.setText("Go back");
+        Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -332,7 +330,6 @@ public class Physics extends javax.swing.JFrame {
                             .addComponent(f3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(e1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(e4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(f1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(e2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -364,6 +361,10 @@ public class Physics extends javax.swing.JFrame {
                                     .addComponent(f8, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(f9, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addContainerGap())))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Back)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -417,9 +418,10 @@ public class Physics extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(k7)
-                    .addComponent(e4)
                     .addComponent(f9))
-                .addContainerGap(74, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addComponent(Back)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -461,16 +463,12 @@ public class Physics extends javax.swing.JFrame {
     }//GEN-LAST:event_e1ActionPerformed
 
     private void e2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e2ActionPerformed
-        // TODO add your handling code here:
+        new EVoltage().setVisible(true);
     }//GEN-LAST:event_e2ActionPerformed
 
     private void e3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e3ActionPerformed
-        // TODO add your handling code here:
+        new ECurrent().setVisible(true);
     }//GEN-LAST:event_e3ActionPerformed
-
-    private void e4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_e4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_e4ActionPerformed
 
     private void f4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f4ActionPerformed
         new EWork().setVisible(true);
@@ -548,6 +546,10 @@ public class Physics extends javax.swing.JFrame {
         new KNoTime().setVisible(true);
     }//GEN-LAST:event_k7ActionPerformed
 
+    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+        new Intro().setVisible(true);
+    }//GEN-LAST:event_BackActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -581,10 +583,10 @@ public class Physics extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Back;
     private javax.swing.JButton e1;
     private javax.swing.JButton e2;
     private javax.swing.JButton e3;
-    private javax.swing.JButton e4;
     private javax.swing.JButton f1;
     private javax.swing.JButton f10;
     private javax.swing.JButton f2;

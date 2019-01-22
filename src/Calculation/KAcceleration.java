@@ -27,8 +27,6 @@ public class KAcceleration extends javax.swing.JFrame {
         Time = new javax.swing.JTextField();
         Answer = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(1024, 512));
 

@@ -43,8 +43,6 @@ public class Wperiod extends javax.swing.JFrame {
         ans = new javax.swing.JTextField();
         tVal = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N

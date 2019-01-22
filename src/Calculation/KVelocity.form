@@ -2,7 +2,6 @@
 
 <Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
       <Color blue="cc" green="ff" red="ff" type="rgb"/>
     </Property>
@@ -61,10 +60,8 @@
                           <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jLabel3" alignment="0" pref="235" max="32767" attributes="0"/>
-                              <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="Vel" max="32767" attributes="0"/>
-                                  <Component id="jLabel1" alignment="1" pref="235" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="Vel" max="32767" attributes="0"/>
+                              <Component id="jLabel1" alignment="1" pref="235" max="32767" attributes="0"/>
                               <Component id="Time" alignment="0" pref="235" max="32767" attributes="0"/>
                               <Component id="jLabel2" pref="235" max="32767" attributes="0"/>
                               <Component id="Dis" alignment="0" max="32767" attributes="0"/>

@@ -52,31 +52,26 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="standard" min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="factored" min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="vertex" min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="jButton8" min="-2" pref="219" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="quadratic" max="32767" attributes="0"/>
-                                          <Component id="expon" alignment="1" max="32767" attributes="0"/>
-                                          <Component id="pythag" alignment="0" max="32767" attributes="0"/>
-                                      </Group>
-                                      <Component id="compound" min="-2" pref="219" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="ratios" min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="sine" min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="cosine" min="-2" pref="219" max="-2" attributes="0"/>
-                                      <Component id="annuity" min="-2" pref="219" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="standard" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="factored" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="vertex" min="-2" pref="219" max="-2" attributes="0"/>
                               <Component id="Discrim" min="-2" pref="219" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="quadratic" max="32767" attributes="0"/>
+                                  <Component id="expon" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="pythag" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="compound" min="-2" pref="219" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="ratios" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="sine" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="cosine" min="-2" pref="219" max="-2" attributes="0"/>
+                              <Component id="annuity" min="-2" pref="219" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -114,12 +109,10 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="pythag" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
-                      <Component id="jButton8" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="annuity" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="Discrim" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="Discrim" min="-2" pref="34" max="-2" attributes="0"/>
-                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <EmptySpace pref="85" max="32767" attributes="0"/>
                   <Component id="Back" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -199,17 +192,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vertexActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="jButton8">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Courier New" size="18" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Transformation"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Discrim">

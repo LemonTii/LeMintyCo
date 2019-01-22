@@ -27,8 +27,6 @@ public class EWork extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         dVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N

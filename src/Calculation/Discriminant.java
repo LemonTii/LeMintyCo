@@ -34,8 +34,6 @@ public class Discriminant extends javax.swing.JFrame {
         ANSWER = new javax.swing.JTextField();
         ENTER = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N

@@ -28,7 +28,6 @@ public class Fgravity extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         ANSWER = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1003, 522));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));

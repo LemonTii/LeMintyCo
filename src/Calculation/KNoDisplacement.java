@@ -34,8 +34,6 @@ public class KNoDisplacement extends javax.swing.JFrame {
         Answer = new javax.swing.JTextField();
         Enter = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         jLabel1.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
@@ -96,7 +94,6 @@ public class KNoDisplacement extends javax.swing.JFrame {
 
         Enter.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         Enter.setText("Enter");
-        Enter.setActionCommand("Enter");
         Enter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EnterActionPerformed(evt);

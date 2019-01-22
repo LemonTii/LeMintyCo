@@ -27,8 +27,6 @@ public class EKinetic extends javax.swing.JFrame {
         Answer = new javax.swing.JTextField();
         Enter = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
 
         EKVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N

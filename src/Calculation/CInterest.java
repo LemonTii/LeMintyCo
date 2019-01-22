@@ -47,7 +47,6 @@ public class CInterest extends javax.swing.JFrame {
         nval = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1020, 522));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 204));
