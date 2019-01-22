@@ -304,6 +304,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="&#x394;d= &#xbd;(v1+v2)&#x394;t "/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="k6ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="k7">
           <Properties>
@@ -312,6 +315,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="v2&#xb2;= v1&#xb2;+2&#x101;&#x394;d "/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="k7ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="f1">
           <Properties>

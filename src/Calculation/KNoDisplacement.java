@@ -235,14 +235,14 @@ public class KNoDisplacement extends javax.swing.JFrame {
                 v2 = Double.parseDouble(Vel2.getText());
                 t = Double.parseDouble(Time.getText());
                 
-                Answer.setText("v2 = "+calculation3(v2,v1,t));
+                Answer.setText("a = "+calculation3(v2,v1,t));
             }
             else if ("".equals(Time.getText())){
                 v1 = Double.parseDouble(Vel1.getText());
                 v2 = Double.parseDouble(Vel2.getText());
                 a = Double.parseDouble(Acc.getText());
                 
-                Answer.setText("v2 = "+calculation3(v2,v1,a));
+                Answer.setText("t = "+calculation3(v2,v1,a));
             }
             
         }

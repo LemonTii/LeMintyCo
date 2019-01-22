@@ -70,7 +70,7 @@ public class KNoVelocity1 extends javax.swing.JFrame {
         jLabel5.setText("Formula:");
 
         jLabel7.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
-        jLabel7.setText("d = v1*t +1/2a*t^2");
+        jLabel7.setText("d = v2*t +1/2a*t^2");
 
         Answer.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         Answer.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +226,7 @@ public class KNoVelocity1 extends javax.swing.JFrame {
                 a = Double.parseDouble(Acc.getText());
                 t = Double.parseDouble(Time.getText());
 
-                Answer.setText("v1 = "+calculation1(d,a,t));
+                Answer.setText("v2 = "+calculation1(d,a,t));
             }
             else if ("".equals(Dis.getText())){
                 v2 = Double.parseDouble(Vel2.getText());

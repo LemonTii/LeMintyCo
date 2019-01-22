@@ -130,9 +130,19 @@ public class Physics extends javax.swing.JFrame {
 
         k6.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k6.setText("Δd= ½(v1+v2)Δt ");
+        k6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                k6ActionPerformed(evt);
+            }
+        });
 
         k7.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         k7.setText("v2²= v1²+2āΔd ");
+        k7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                k7ActionPerformed(evt);
+            }
+        });
 
         f1.setFont(new java.awt.Font("Courier New", 0, 14)); // NOI18N
         f1.setText("Fg = mg ");
@@ -529,6 +539,14 @@ public class Physics extends javax.swing.JFrame {
     private void k5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k5ActionPerformed
         new KNoVelocity1().setVisible(true);
     }//GEN-LAST:event_k5ActionPerformed
+
+    private void k6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k6ActionPerformed
+        new KNoAcceleration().setVisible(true);
+    }//GEN-LAST:event_k6ActionPerformed
+
+    private void k7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_k7ActionPerformed
+        new KNoTime().setVisible(true);
+    }//GEN-LAST:event_k7ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
