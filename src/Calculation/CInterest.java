@@ -5,12 +5,19 @@
  */
 package Calculation;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author S347095960
  */
 public class CInterest extends javax.swing.JFrame {
-
+    
+    double A;
+    double P;
+    double i;
+    double n;
+    
     /**
      * Creates new form CInterest
      */
@@ -29,15 +36,15 @@ public class CInterest extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        enter = new javax.swing.JButton();
+        pval = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        ans = new javax.swing.JTextField();
+        ival = new javax.swing.JTextField();
+        nval = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,18 +55,18 @@ public class CInterest extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         jLabel1.setText("P Value");
 
-        jButton1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jButton1.setText("Enter");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        enter.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        enter.setText("Enter");
+        enter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                enterActionPerformed(evt);
             }
         });
 
-        jTextField1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        pval.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        pval.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                pvalActionPerformed(evt);
             }
         });
 
@@ -75,12 +82,12 @@ public class CInterest extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel6.setText("A = P(1+i)^n");
 
-        jTextField2.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField2.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ans.setBackground(new java.awt.Color(240, 240, 240));
+        ans.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField3.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ival.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField4.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        nval.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel7.setText("Formula:");
@@ -96,14 +103,14 @@ public class CInterest extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)))
+                        .addComponent(pval, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(ival, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(nval, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(enter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 208, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 270, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel6))
                 .addGap(260, 260, 260))
@@ -117,22 +124,22 @@ public class CInterest extends javax.swing.JFrame {
                     .addComponent(jLabel5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(pval, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ival, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(nval, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(enter)
                 .addContainerGap(220, Short.MAX_VALUE))
         );
 
@@ -150,13 +157,28 @@ public class CInterest extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
+            try{
+            //setting up values
+            P=Double.parseDouble(pval.getText());
+            i=Double.parseDouble(ival.getText());
+            n=Double.parseDouble(nval.getText());
+        
+            A = P*Math.pow(1 + i,n);
+        //show answer
+            ans.setText("A= " +A);
+        }
+        //Error message for invalid variable type
+        catch (Exception e){
+            JOptionPane.showMessageDialog(null, "Invalid/missing variable");
+        }
+            
+            
+    }//GEN-LAST:event_enterActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void pvalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pvalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_pvalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,15 +208,15 @@ public class CInterest extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CInterest().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new CInterest().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField ans;
+    private javax.swing.JButton enter;
+    private javax.swing.JTextField ival;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -202,9 +224,7 @@ public class CInterest extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField nval;
+    private javax.swing.JTextField pval;
     // End of variables declaration//GEN-END:variables
 }

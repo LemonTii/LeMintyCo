@@ -5,12 +5,20 @@
  */
 package Calculation;
 
+import javax.swing.JOptionPane;
+import java.util.*; 
+
 /**
  *
  * @author S347095960
  */
 public class SineLaw extends javax.swing.JFrame {
-
+    
+    double a;
+    double sinA;
+    double b;
+    double sinB;
+    
     /**
      * Creates new form SineLaw
      */
@@ -29,16 +37,16 @@ public class SineLaw extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        enter = new javax.swing.JButton();
+        ans = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
+        sinBval = new javax.swing.JTextField();
+        aVal = new javax.swing.JTextField();
+        bVal = new javax.swing.JTextField();
+        sinAval = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
 
@@ -50,14 +58,19 @@ public class SineLaw extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         jLabel1.setText("a Value");
 
-        jButton1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jButton1.setText("Enter");
-
-        jTextField1.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        enter.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        enter.setText("Enter");
+        enter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                enterActionPerformed(evt);
+            }
+        });
+
+        ans.setBackground(new java.awt.Color(240, 240, 240));
+        ans.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ans.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ansActionPerformed(evt);
             }
         });
 
@@ -73,31 +86,31 @@ public class SineLaw extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         jLabel5.setText("b Value");
 
-        jTextField2.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        sinBval.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        sinBval.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                sinBvalActionPerformed(evt);
             }
         });
 
-        jTextField3.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        aVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        aVal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                aValActionPerformed(evt);
             }
         });
 
-        jTextField4.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        bVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        bVal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                bValActionPerformed(evt);
             }
         });
 
-        jTextField5.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        sinAval.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        sinAval.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                sinAvalActionPerformed(evt);
             }
         });
 
@@ -116,19 +129,19 @@ public class SineLaw extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sinAval, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sinBval, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(aVal, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(bVal, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addGap(270, 270, 270)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel2)
                             .addComponent(jLabel7))))
                 .addContainerGap(227, Short.MAX_VALUE))
@@ -143,28 +156,28 @@ public class SineLaw extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(jLabel2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(aVal, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addGap(7, 7, 7)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sinAval, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bVal, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sinBval, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addComponent(enter)
                 .addContainerGap(63, Short.MAX_VALUE))
         );
 
@@ -182,25 +195,67 @@ public class SineLaw extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void ansActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ansActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_ansActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void sinBvalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinBvalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_sinBvalActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void aValActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aValActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_aValActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void bValActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bValActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_bValActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void sinAvalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sinAvalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_sinAvalActionPerformed
+
+    private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
+try { 
+        //if sinA is unknown
+        if ("".equals(sinAval.getText())) {
+            a=Double.parseDouble(aVal.getText());
+            b=Double.parseDouble(bVal.getText());
+            sinB=Double.parseDouble(sinBval.getText());
+            sinA = (sinB * a)/b;
+            ans.setText(String.format("sinA= %.2f", sinA));
+        
+        //if sinB is unknown
+        } else if ("".equals(sinBval.getText())) {
+            a=Double.parseDouble(aVal.getText());
+            b=Double.parseDouble(bVal.getText());
+            sinA=Double.parseDouble(sinAval.getText());
+            sinB = (sinA * b)/a;
+            ans.setText(String.format("sinB= %.2f", sinB));
+            
+        //if a is unknown
+        } else if ("".equals(aVal.getText())) {
+            sinA=Double.parseDouble(sinAval.getText());
+            b=Double.parseDouble(bVal.getText());
+            sinB=Double.parseDouble(sinBval.getText());
+            a = (sinA * b)/sinB;
+            ans.setText(String.format("a= %.2f", a));
+           
+        //if b is unknown
+        } else if ("".equals(bVal.getText())) {
+            a=Double.parseDouble(aVal.getText());
+            sinB=Double.parseDouble(sinBval.getText());
+            sinA=Double.parseDouble(sinAval.getText());
+            b = (sinB * a)/sinA;
+            ans.setText(String.format("b= %.2f", b));
+            
+        //if anything else happens then its invalid
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid variable");
+        }
+      } catch (Exception e) {
+          JOptionPane.showMessageDialog(null, "Invalid variable");
+      }    }//GEN-LAST:event_enterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -230,15 +285,16 @@ public class SineLaw extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SineLaw().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new SineLaw().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField aVal;
+    private javax.swing.JTextField ans;
+    private javax.swing.JTextField bVal;
+    private javax.swing.JButton enter;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -247,10 +303,7 @@ public class SineLaw extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField sinAval;
+    private javax.swing.JTextField sinBval;
     // End of variables declaration//GEN-END:variables
 }

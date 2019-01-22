@@ -245,10 +245,8 @@ public class StandardF extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new StandardF().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new StandardF().setVisible(true);
         });
     }
 

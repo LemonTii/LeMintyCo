@@ -5,12 +5,19 @@
  */
 package Calculation;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author S347095960
  */
 public class Wdopler extends javax.swing.JFrame {
-
+    
+    double f1;
+    double f2;
+    double v1;
+    double v2;
+    
     /**
      * Creates new form Wdopler
      */
@@ -35,12 +42,13 @@ public class Wdopler extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        enter = new javax.swing.JButton();
+        f1Val = new javax.swing.JTextField();
+        v1Val = new javax.swing.JTextField();
+        f2Val = new javax.swing.JTextField();
+        v2Val = new javax.swing.JTextField();
+        ans = new javax.swing.JTextField();
+        combo = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -67,19 +75,31 @@ public class Wdopler extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel8.setText("Answer");
 
-        jButton1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jButton1.setText("Enter");
+        enter.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        enter.setText("Enter");
+        enter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enterActionPerformed(evt);
+            }
+        });
 
-        jTextField1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        f1Val.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField2.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        v1Val.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField4.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        f2Val.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField5.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        v2Val.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField6.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField6.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ans.setBackground(new java.awt.Color(240, 240, 240));
+        ans.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+
+        combo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "away (+)", "towards (-)" }));
+        combo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -89,30 +109,26 @@ public class Wdopler extends javax.swing.JFrame {
                 .addGap(70, 70, 70)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(v1Val, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2)
+                            .addComponent(v2Val, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6)
+                            .addComponent(f2Val, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel1)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel6)
-                                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(jLabel7)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(270, 270, 270))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(366, 366, 366)))
+                                .addComponent(f1Val, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(combo, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(44, 44, 44)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
                             .addComponent(jLabel3)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addContainerGap(93, Short.MAX_VALUE))))
         );
@@ -124,17 +140,19 @@ public class Wdopler extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(f1Val, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(combo, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(v1Val, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(v2Val, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -142,10 +160,10 @@ public class Wdopler extends javax.swing.JFrame {
                             .addComponent(jLabel6)
                             .addComponent(jLabel5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(f2Val, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel3))
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(enter)
                 .addContainerGap(63, Short.MAX_VALUE))
         );
 
@@ -162,6 +180,93 @@ public class Wdopler extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void comboActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboActionPerformed
+
+    private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
+        try { 
+        //if f2 is unknown and away is selected
+        if ("".equals(f2Val.getText()) && "away (+)".equals(combo.getSelectedItem())) {
+            
+            v2=Double.parseDouble(v2Val.getText());
+            f1=Double.parseDouble(f1Val.getText());
+            v1=Double.parseDouble(v1Val.getText());
+            f2 = f1*(v1/v1 + v2);
+            ans.setText(String.format("f2= %.2f", f2));
+        
+        //if f2 is unknown and towards is selected
+        } else if ("".equals(f2Val.getText()) && "towards (-)".equals(combo.getSelectedItem())) {
+            
+            v2=Double.parseDouble(v2Val.getText());
+            f1=Double.parseDouble(f1Val.getText());
+            v1=Double.parseDouble(v1Val.getText());
+            f2 = f1*(v1/v1 - v2);
+            ans.setText(String.format("f2= %.2f", f2));
+            
+            //if f1 is unknown and away is selected
+            } else if ("".equals(f1Val.getText()) && "away (+)".equals(combo.getSelectedItem())) { 
+                
+                v2=Double.parseDouble(v2Val.getText());
+                f2=Double.parseDouble(f2Val.getText());
+                v1=Double.parseDouble(v1Val.getText());
+                f1 = f2*(v1 + v2)/v1;
+                ans.setText(String.format("f1= %.2f", f1));
+            
+            //if f1 is unknown and towards is selected
+            } else if ("".equals(f1Val.getText()) && "towards (-)".equals(combo.getSelectedItem())) { 
+
+            v2=Double.parseDouble(v2Val.getText());
+            f2=Double.parseDouble(f2Val.getText());
+            v1=Double.parseDouble(v1Val.getText());
+            f1 = f2*(v1 - v2)/v1;
+            ans.setText(String.format("f1= %.2f", f1));
+                
+            //if v2 is unknown and away is selected
+            } else if ("".equals(v2Val.getText()) && "away (+)".equals(combo.getSelectedItem())) {
+                
+                f1=Double.parseDouble(f1Val.getText());
+                f2=Double.parseDouble(f2Val.getText());
+                v1=Double.parseDouble(v1Val.getText());
+                v2 = ((f1*v1)/f2)-v1;
+                ans.setText(String.format("v2= %.2f", v2));
+                
+            //if v2 is unknown and towards is selected
+            } else if ("".equals(v2Val.getText()) && "towards (-)".equals(combo.getSelectedItem())) {
+                
+                f1=Double.parseDouble(f1Val.getText());
+                f2=Double.parseDouble(f2Val.getText());
+                v1=Double.parseDouble(v1Val.getText());
+                v2 = -((f1*v1)/f2)-v1;
+                ans.setText(String.format("v2= %.2f", v2));
+               
+            //if v1 is unknown and away is selected
+            } else if ("".equals(v1Val.getText()) && "away (+)".equals(combo.getSelectedItem())) {
+                
+                f1=Double.parseDouble(f1Val.getText());
+                f2=Double.parseDouble(f2Val.getText());
+                v2=Double.parseDouble(v2Val.getText());
+                v1 = (f2*v2)/(f1-f2);
+                ans.setText(String.format("v2= %.2f", v2));
+                
+            //if v1 is unknown and towards is selected
+            } else if ("".equals(v1Val.getText()) && "towards (-)".equals(combo.getSelectedItem())) {
+                
+                f1=Double.parseDouble(f1Val.getText());
+                f2=Double.parseDouble(f2Val.getText());
+                v2=Double.parseDouble(v2Val.getText());
+                v1 = -(f2*v2)/(f1-f2);
+                ans.setText(String.format("v2= %.2f", v2));
+                
+                //if anything else happens then its invalid
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid variable");
+            }
+      } catch (Exception e) {
+          JOptionPane.showMessageDialog(null, "Invalid variable");
+      }
+    }//GEN-LAST:event_enterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,15 +296,17 @@ public class Wdopler extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Wdopler().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Wdopler().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField ans;
+    private javax.swing.JComboBox<String> combo;
+    private javax.swing.JButton enter;
+    private javax.swing.JTextField f1Val;
+    private javax.swing.JTextField f2Val;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -208,10 +315,7 @@ public class Wdopler extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField v1Val;
+    private javax.swing.JTextField v2Val;
     // End of variables declaration//GEN-END:variables
 }

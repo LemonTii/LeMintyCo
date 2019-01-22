@@ -5,12 +5,17 @@
  */
 package Calculation;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author S347095960
  */
 public class Wperiod extends javax.swing.JFrame {
-
+    
+    double t;
+    double f;
+    
     /**
      * Creates new form Wperiod
      */
@@ -29,14 +34,14 @@ public class Wperiod extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        enter = new javax.swing.JButton();
+        fVal = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        ans = new javax.swing.JTextField();
+        tVal = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,10 +50,15 @@ public class Wperiod extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
         jLabel1.setText("f Value");
 
-        jButton1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
-        jButton1.setText("Enter");
+        enter.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        enter.setText("Enter");
+        enter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enterActionPerformed(evt);
+            }
+        });
 
-        jTextField1.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        fVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel2.setText("Formula:");
@@ -62,10 +72,10 @@ public class Wperiod extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Courier New", 1, 24)); // NOI18N
         jLabel6.setText("Answer");
 
-        jTextField2.setBackground(new java.awt.Color(240, 240, 240));
-        jTextField2.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        ans.setBackground(new java.awt.Color(240, 240, 240));
+        ans.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
-        jTextField3.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
+        tVal.setFont(new java.awt.Font("Courier New", 0, 24)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -77,10 +87,10 @@ public class Wperiod extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tVal, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(enter, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(270, 270, 270)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
@@ -88,12 +98,12 @@ public class Wperiod extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(267, 267, 267))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(fVal, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 270, Short.MAX_VALUE)
                         .addComponent(jLabel6)
                         .addGap(391, 391, 391))))
@@ -107,18 +117,18 @@ public class Wperiod extends javax.swing.JFrame {
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(fVal, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ans, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tVal, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
                 .addComponent(jLabel2)
                 .addGap(26, 26, 26)
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(enter)
                 .addContainerGap(132, Short.MAX_VALUE))
         );
 
@@ -135,6 +145,31 @@ public class Wperiod extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void enterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterActionPerformed
+try { 
+        //if t is unknown
+        if ("".equals(tVal.getText())) {
+            
+            f=Double.parseDouble(fVal.getText());
+            t = 1/f;
+            ans.setText(String.format("t= %.2f", t));
+        
+        //if f is unknown
+        } else if ("".equals(fVal.getText())) {
+            
+            t=Double.parseDouble(tVal.getText());
+            f = 1/t;
+            ans.setText(String.format("f= %.2f", f));
+            
+        //if anything else happens then its invalid
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid variable");
+        }
+      } catch (Exception e) {
+          JOptionPane.showMessageDialog(null, "Invalid variable");
+      }
+    }//GEN-LAST:event_enterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,23 +199,21 @@ public class Wperiod extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Wperiod().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Wperiod().setVisible(true);
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JTextField ans;
+    private javax.swing.JButton enter;
+    private javax.swing.JTextField fVal;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField tVal;
     // End of variables declaration//GEN-END:variables
 }

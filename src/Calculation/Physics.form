@@ -66,7 +66,7 @@
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="77" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
                       </Group>
@@ -79,16 +79,32 @@
                               <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
                               <Component id="e1" max="32767" attributes="0"/>
                               <Component id="e4" max="32767" attributes="0"/>
+                              <Component id="f1" alignment="0" max="32767" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="e2" min="-2" pref="81" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="e3" min="-2" pref="84" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="f1" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <EmptySpace min="-2" pref="259" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace pref="158" max="32767" attributes="0"/>
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="48" pref="48" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="w1" min="-2" pref="171" max="-2" attributes="0"/>
+                                      <Component id="w2" min="-2" pref="171" max="-2" attributes="0"/>
+                                      <Component id="w3" min="-2" pref="171" max="-2" attributes="0"/>
+                                      <Component id="w5" min="-2" pref="171" max="-2" attributes="0"/>
+                                      <Component id="w4" min="-2" pref="171" max="-2" attributes="0"/>
+                                      <Component id="w6" min="-2" pref="171" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="f5" min="-2" pref="171" max="-2" attributes="0"/>
                                       <Component id="f4" min="-2" pref="171" max="-2" attributes="0"/>
@@ -98,14 +114,7 @@
                                       <Component id="f8" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
                                       <Component id="f9" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -132,49 +141,49 @@
                       <Component id="k1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="f1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="f4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="w1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="f2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="k2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="f2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="f5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="w2" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="f3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="k3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="f3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="f6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="w3" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="k4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="f7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="w4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="k5" min="-2" max="-2" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="e1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="f10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="e2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="e3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="k6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="f8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="k5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="e1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="f10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="w5" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="f9" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="e4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="k7" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="k6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="e2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="e3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="f8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="w6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="k7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="e4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="f9" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="74" max="32767" attributes="0"/>
               </Group>
@@ -450,6 +459,72 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="f10ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="w1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Courier New" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="v = f&#x3bb;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="w1ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="w2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Courier New" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="v=331.4m/s+0.606m/s/&#xb0;CxT"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="w2ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="w3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Courier New" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="f = N/&#x394; t"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="w3ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="w5">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Courier New" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="fbeat = |f2 - f1|"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="w5ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="w4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Courier New" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="T = 1/f"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="w4ActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="w6">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Courier New" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="f2=f1(vsound/(vsound&#xb1;vsource))"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="w6ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

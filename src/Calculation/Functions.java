@@ -268,7 +268,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_equivActionPerformed
 
     private void exponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exponActionPerformed
-        // TODO add your handling code here:
+        new Exponential().setVisible(true);
     }//GEN-LAST:event_exponActionPerformed
 
     private void pythagActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pythagActionPerformed
@@ -300,7 +300,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_ratiosActionPerformed
 
     private void sineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sineActionPerformed
-        // TODO add your handling code here:
+        new SineLaw().setVisible(true);
     }//GEN-LAST:event_sineActionPerformed
 
     private void cosineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cosineActionPerformed
@@ -312,7 +312,7 @@ public class Functions extends javax.swing.JFrame {
     }//GEN-LAST:event_annuityActionPerformed
 
     private void compoundActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compoundActionPerformed
-        // TODO add your handling code here:
+        new CInterest().setVisible(true);
     }//GEN-LAST:event_compoundActionPerformed
 
     private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
